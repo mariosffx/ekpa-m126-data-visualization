@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { PageContainer } from "@/components/containers/containers";
-import Navbar from "@/components/partials/partials";
+import { MaxWidthContainer } from "@/components/containers/containers";
+import { Navbar, Footer } from "@/components/partials/partials";
 import { navbar } from "@/data/partials";
 
 const geistSans = Geist({
@@ -31,7 +31,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar {...navbar} />
-        <PageContainer>{children}</PageContainer>
+        <MaxWidthContainer>{children}</MaxWidthContainer>
+        <Footer {...navbar} />
       </body>
     </html>
   );

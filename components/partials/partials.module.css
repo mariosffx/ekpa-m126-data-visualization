@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.link {
+}

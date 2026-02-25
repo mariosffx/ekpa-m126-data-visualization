@@ -1,22 +1,22 @@
-import type { NavbarProps } from "@/types/partials";
+import type { PartialProps } from "@/types/partials";
 
-const navbar: NavbarProps = {
-  title: "M126 Data Visualization - Marios Toparopoulos",
-  links: [
+const navbar: PartialProps = {
+  brand: "M126 Data Visualization - Marios Toparopoulos",
+  items: [
     {
-      name: "Home",
+      text: "Home",
       href: "/"
     },
     {
-      name: "Visualization Images",
+      text: "Visualization Images",
       href: "/visualization-images"
     },
     {
-      name: "Animated Shapes",
+      text: "Animated Shapes",
       href: "/animated-shapes"
     },
     {
-      name: "Credits",
+      text: "Credits",
       href: "/credits"
     }
   ]
